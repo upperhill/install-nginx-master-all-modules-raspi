@@ -1,6 +1,8 @@
 compile-nginx-master-all-modules Raspbian
 ================================
 
+## WORK IN PROGRESS - as of 6/18/2015
+
 This module compile latest nginx version and complementary modules on Raspbian
 
 
@@ -251,39 +253,39 @@ ngx_pagespeed
 ## Install php55W
 
     rpm -Uvh http://mirror.webtatic.com/yum/el6/latest.rpm
-    yum install -y libfbclient
-    yum install -y libfbclient-devel
-    yum install -y php-embedded-devel
-    yum install -y php55w
-    yum install -y php55w-opcache
-    yum install -y php55w-common
-    yum install -y php55w-fpm
-    yum install -y php55w-cli
-    yum install -y php55w-dba
-    yum install -y php55w-devel
-    yum install -y php55w-embedded
-    yum install -y php55w-enchant
-    yum install -y php55w-gd
-    yum install -y php55w-imap
-    yum install -y php55w-mbstring
-    yum install -y php55w-mcrypt
-    yum install -y php55w-mysql
-    yum install -y php55w-odbc
-    yum install -y php55w-pdo
-    yum install -y php55w-pecl-memcache
-    yum install -y php55w-pecl-xdebug
-    yum install -y php55w-process
-    yum install -y php55w-pspell 
-    yum install -y php55w-recode
-    yum install -y php55w-snmp
-    yum install -y php55w-soap
-    yum install -y php55w-tidy
-    yum install -y php55w-xml
-    yum install -y php55w-xmlrpc
-    yum install -y php55w-intl
-    yum install -y php-firebird
-    yum install -y php_database
-    yum install -y php55w-bcmath
+    apt-get install -y libfbclient
+    apt-get install -y libfbclient-devel
+    apt-get install -y php-embedded-devel
+    apt-get install -y php55w
+    apt-get install -y php55w-opcache
+    apt-get install -y php55w-common
+    apt-get install -y php55w-fpm
+    apt-get install -y php55w-cli
+    apt-get install -y php55w-dba
+    apt-get install -y php55w-devel
+    apt-get install -y php55w-embedded
+    apt-get install -y php55w-enchant
+    apt-get install -y php55w-gd
+    apt-get install -y php55w-imap
+    apt-get install -y php55w-mbstring
+    apt-get install -y php55w-mcrypt
+    apt-get install -y php55w-mysql
+    apt-get install -y php55w-odbc
+    apt-get install -y php55w-pdo
+    apt-get install -y php55w-pecl-memcache
+    apt-get install -y php55w-pecl-xdebug
+    apt-get install -y php55w-process
+    apt-get install -y php55w-pspell 
+    apt-get install -y php55w-recode
+    apt-get install -y php55w-snmp
+    apt-get install -y php55w-soap
+    apt-get install -y php55w-tidy
+    apt-get install -y php55w-xml
+    apt-get install -y php55w-xmlrpc
+    apt-get install -y php55w-intl
+    apt-get install -y php-firebird
+    apt-get install -y php_database
+    apt-get install -y php55w-bcmath
 
 ## Install drush
 
@@ -292,9 +294,9 @@ ngx_pagespeed
 
 ## Install memcached
 
-    yum install memcached
+    apt-get install -y memcached
     
 ## Install mysql
 
-    yum install -y mysql
-    yum install -y mysql-server
+    apt-get install -y mysql
+    apt-get install -y mysql-server
