@@ -1,7 +1,7 @@
-compile-nginx-master-all-modules Centos 6.x
+compile-nginx-master-all-modules Raspbian
 ================================
 
-This module compile latest nginx version and complementary modules on centos 6.x
+This module compile latest nginx version and complementary modules on Raspbian
 
 
 ## Installation dependence
