@@ -7,27 +7,42 @@ This module compile latest nginx version and complementary modules on Raspbian
 ## Installation dependence
 
     cd /usr/local/src
-    yum -y groupinstall "Development Tools"
-    yum -y install gcc gcc-c++ kernel-devel
-    yum -y install zlib-devel
-    yum -y install cpio
-    yum -y install expat-devel
-    yum -y install gettext-devel
-    yum -y install libxslt
-    yum -y install libxslt-devel
-    yum -y install gd gd-devel
-    yum -y install perl-ExtUtils-Embed
-    yum -y install openssl
-    yum -y install openssl-devel
-    yum -y install lua-devel
+     apt-get install build-essential                                  
+     apt-get install g++
+     apt-get install zlib1g-dev
+     apt-get install cpio
+     apt-get install libexpat1-dev
+     apt-get install gettext
+     apt-get install libxslt1.1
+     apt-get install libxslt1-dev
+     apt-get install libgd-tools
+     apt-get install libextutils-autoinstall-perl
+     apt-get install libextutils-cbuilder-perl
+     apt-get install libextutils-libbuilder-perl
+     apt-get install openssl
+     apt-get install libcurl4-openssl-dev
+     apt-get install liblua5.1-0-dev
+     apt-get install zlib1g-dev
+     apt-get install libfbclient2
+     apt-get install firebird-dev
+     apt-get install libfbembed2.5
+     apt-get install libphp5-embed
+     apt-get install 
+     apt-get install php5-dev
+     apt-get install 
+     apt-get install 
+     apt-get install php5-mysql
+     apt-get install 
+     apt-get install mysql-client
+     apt-get install mysql-server
     
     
-## Download latest Pcre 8.34
+## Download latest Pcre 8.36
 
     cd /usr/local/src
-    wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.34.tar.gz
-    tar -xzvf pcre-8.34.tar.gz
-    cd pcre-8.34/
+    wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.36.tar.gz
+    tar -xzvf pcre-8.36.tar.gz
+    cd pcre-8.36/
     ./configure # /usr/local is the default so no need to prefix
     make
     sudo make install
@@ -184,7 +199,7 @@ ngx_pagespeed
     --http-proxy-temp-path=/var/lib/nginx/proxy \
     --http-scgi-temp-path=/var/lib/nginx/scgi \
     --http-uwsgi-temp-path=/var/lib/nginx/uwsgi \
-    --with-pcre=/usr/local/src/pcre-8.34 \
+    --with-pcre=/usr/local/src/pcre-8.36 \
     --with-debug \
     --with-http_addition_module \
     --with-http_dav_module \
